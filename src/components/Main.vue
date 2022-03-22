@@ -24,7 +24,6 @@
 
 <script lang="ts">
 import { defineComponent } from "vue";
-import axios from "axios";
 
 export default defineComponent({
   name: "Main",
@@ -38,7 +37,7 @@ export default defineComponent({
       connection: WebSocket | null;
     }
     return <Data>{
-      serverAddr: "ws://localhost:3030/socket",
+      serverAddr: "wss://go-messaging-test-app-server.arnav03mehta.repl.co/socket",
       text: "",
       messages: [],
       userName: "",
